@@ -14,7 +14,7 @@ class Solution:
         mx = A[0]
         su = A[0]
         for i in range(1,len(A)):
-            if su + A[i] >= 0 and su + A[i] > A[i]:
+            if su + A[i] > A[i]:
                 su = su + A[i]
             else:
                 su = A[i]
